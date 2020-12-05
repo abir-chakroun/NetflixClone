@@ -1,12 +1,16 @@
 .row__posters {
   display: flex;
   overflow-y: hidden;
-  overflow-x: auto;
+  overflow-x: scroll;
   padding: 20px;
 }
 
 .row__posters::-webkit-scrollbar {
   display: none;
+}
+
+.row h2 {
+  color: #fff;
 }
 .row__poster {
   width: 100%;
@@ -18,4 +22,16 @@
 .row__poster:hover {
   transform: scale(1.08);
   opacity: 1;
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
+
+.row {
+  margin-left: 20px;
 }
